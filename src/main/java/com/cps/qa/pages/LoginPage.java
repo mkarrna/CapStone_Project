@@ -29,7 +29,7 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 	
-	public void CustomerLogin(String username)
+	public AccountPage CustomerLogin(String username)
 	{
 		Customer_Login.click();
 		WebElement dropdownElement = driver.findElement(By.xpath(prop.getProperty("dropdown")));
@@ -42,6 +42,8 @@ public class LoginPage extends TestBase {
         String path=prop.getProperty("Login");
         
         driver.findElement(By.xpath(path)).click();
+        
+        return new AccountPage();
 
 		
 	}

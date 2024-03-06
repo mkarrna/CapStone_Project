@@ -16,11 +16,30 @@ public class AccountPage extends TestBase{
 	@FindBy(xpath="//span[@class='fontBig ng-binding']")
 	WebElement Customer_Name;
 	
-	@FindBy(xpath="//button[@class='btn btn-lg tab btn-primary']")
+	@FindBy(xpath="//button[@ng-click='deposit()']")
 	WebElement Deposit_button;
+	
+	@FindBy(xpath="//button[@type='submit']")
+	WebElement Deposit_Submit;
 	
 	@FindBy(xpath="//button[normalize-space()='Withdrawl']")
 	WebElement Withdraw_button;
+	
+	@FindBy(xpath="//div[2]/strong[1]")
+	WebElement Account_number;
+	
+	@FindBy(xpath="//div[2]/strong[2]")
+	WebElement Balance;
+
+	@FindBy(xpath="//div[2]/strong[3]")
+	WebElement Currency;
+	
+	@FindBy(xpath="//select[@id='accountSelect']")
+	WebElement AccountNumberList;
+	
+	@FindBy(xpath="//input[@placeholder='amount']")
+	WebElement Deposit_Amount;
+	
 	
 	
 	//Initializing the Page Objects:
@@ -38,19 +57,33 @@ public class AccountPage extends TestBase{
 		return Customer_Name.getText();
 	}
 	
+	public String GetBalance(){
+		return Balance.getText();
+	}
 	
 	
+	public int acno()
+	{
+	 Select dropdown = new Select(AccountNumberList);
+	  int itemCount = dropdown.getOptions().size();
+	  return itemCount; 
+	}
 	
+	public void SelectAccount(int index)
+	{
+		 Select dropdown = new Select(AccountNumberList);
+		 dropdown.selectByIndex(index);
+	}
 	
-//	public AddToCart login(String un, String pwd){
-//	
-//		username.sendKeys(un);
-//		password.sendKeys(pwd);
-//		loginBtn.click();
-//		    
-//		    	
-//		return new AddToCart();
-//	}
+	public AccountPage Deposit(int amount){
+		Deposit_button.click();
+		Deposit_Amount.sendKeys(String.valueOf(amount));
+		Deposit_Submit.click();
+		
+	
+		   	
+		return new AccountPage();
+	}
 //	public HomePage login1(String un, String pwd){
 //		
 //		username.sendKeys(un);
@@ -61,4 +94,6 @@ public class AccountPage extends TestBase{
 //		return new HomePage();
 //	}
 //	
+
+	
 }
