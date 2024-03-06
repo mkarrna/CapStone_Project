@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.cps.qa.testCases.CustomerLogin_Test"/>
+      <class name="com.cps.qa.testCases.AccountPage_Test"/>
       <class name="Capstone_Project.CapstoneProject.AppTest"/>
     </classes>
   </test> <!-- Test -->
