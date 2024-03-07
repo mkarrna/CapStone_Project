@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+
 import com.cps.qa.base.TestBase;
 
 public class AccountPage extends TestBase{
@@ -39,6 +41,15 @@ public class AccountPage extends TestBase{
 	
 	@FindBy(xpath="//input[@placeholder='amount']")
 	WebElement Deposit_Amount;
+	
+	@FindBy(xpath="//span[@class='error ng-binding']")
+	WebElement deposit_Message;
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -75,15 +86,72 @@ public class AccountPage extends TestBase{
 		 dropdown.selectByIndex(index);
 	}
 	
-	public AccountPage Deposit(int amount){
+	public AccountPage Deposit(int amount)
+	{
 		Deposit_button.click();
+		Deposit_Amount.clear();
 		Deposit_Amount.sendKeys(String.valueOf(amount));
-		Deposit_Submit.click();
-		
-	
-		   	
+		Deposit_Submit.click();  	
 		return new AccountPage();
 	}
+	
+	
+	public String message()
+	{
+		return deposit_Message.getText();
+	}
+	
+	public int CurrentBalance(int Amount_To_Deposit,int oldBalance)
+	{
+		int currentBalance=0;
+		if(Amount_To_Deposit<0)
+		{
+			currentBalance = oldBalance;
+		}
+		else
+		{
+			currentBalance = oldBalance + Amount_To_Deposit;
+		}
+		return currentBalance;
+		
+	}
+	
+	public void ValidDeposit(String message,int Amount)
+	{
+		int count = acno();
+		for(int i=0;i<count;i++)
+		{
+			 SelectAccount(i);
+			 int oldBal= Integer.valueOf(GetBalance());
+			 Deposit(Amount);
+			 int newBal = Integer.valueOf(GetBalance());
+			 int currentBal = CurrentBalance(Amount,oldBal) ;
+			 Assert.assertEquals(currentBal, newBal);
+			 String msg = message();
+			 Assert.assertEquals(msg , message );
+			 
+		}
+	}
+	public void InValidDeposit(int Amount)
+	{
+		int count = acno();
+		for(int i=0;i<count;i++)
+		{
+			 SelectAccount(i);
+			 int oldBal= Integer.valueOf(GetBalance());
+			 Deposit(Amount);
+			 int newBal = Integer.valueOf(GetBalance());
+			 int currentBal = CurrentBalance(Amount,oldBal) ;
+			 Assert.assertEquals(currentBal, newBal);
+			 
+			 //invalid case doesn't raise error msg
+			// String msg = message();
+			// Assert.assertEquals(msg , message );
+			 
+		}
+	}
+	
+	
 //	public HomePage login1(String un, String pwd){
 //		
 //		username.sendKeys(un);

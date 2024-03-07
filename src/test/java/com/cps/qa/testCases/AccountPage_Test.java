@@ -15,7 +15,9 @@ public class AccountPage_Test extends TestBase{
 	AccountPage accountPage;
 	String AccountexistUser = prop.getProperty("AccontExistUser");
 	String AccountNot_existUser = prop.getProperty("AccontNot_ExistUser");
-	int Amount = Integer.valueOf(prop.getProperty("amount")) ;
+	int ValidAmount = Integer.valueOf(prop.getProperty("ValidAmount")) ;
+	int InValidAmount = Integer.valueOf(prop.getProperty("InValidAmount")) ;
+	
 	
 	
 	
@@ -32,11 +34,11 @@ public class AccountPage_Test extends TestBase{
 		
 	}
 	
-//	@Test(priority=1)
-//	public void loginPageTitleTest(){
-//		String title = loginPage.validateLoginPageTitle();
-//		Assert.assertEquals(title, "XYZ Bank");
-//	}
+	@Test(priority=1)
+	public void loginPageTitleTest(){
+		String title = loginPage.validateLoginPageTitle();
+		Assert.assertEquals(title, "XYZ Bank");
+	}
 	
 	@Test(priority=2)
 	public void verifyBalance()
@@ -47,27 +49,34 @@ public class AccountPage_Test extends TestBase{
 		
 	}
 	
+
 	@Test(priority=3)
-	public void acnumber()
+	public void Verify_Deposit_With_ValideAmmount()
 	{
-		System.out.println(accountPage.acno()); 
+		accountPage.ValidDeposit("Deposit Successful",ValidAmount);
 	}
 	
 	@Test(priority=4)
-	public void Deposit()
+	public void Verify_Deposit_With_InValideAmmount()
 	{
-		int count = accountPage.acno();
-		for(int i=0;i<count;i++)
-		{
-			 accountPage.SelectAccount(i);
-			 int oldBal= Integer.valueOf(accountPage.GetBalance());
-			 accountPage.Deposit(Amount);
-	
-			 int newBal = Integer.valueOf(accountPage.GetBalance());
-			 int currentBal = oldBal + Amount ;
-			 Assert.assertEquals(currentBal, newBal);
-		}
+		accountPage.InValidDeposit(InValidAmount);
 	}
+	
+//	@Test(priority=4)
+//	public void Deposit()
+//	{
+//		int count = accountPage.acno();
+//		for(int i=0;i<count;i++)
+//		{
+//			 accountPage.SelectAccount(i);
+//			 int oldBal= Integer.valueOf(accountPage.GetBalance());
+//			 accountPage.Deposit(Amount);
+//	
+//			 int newBal = Integer.valueOf(accountPage.GetBalance());
+//			 int currentBal = oldBal + Amount ;
+//			 Assert.assertEquals(currentBal, newBal);
+//		}
+//	}
 	
 	
 	@AfterMethod

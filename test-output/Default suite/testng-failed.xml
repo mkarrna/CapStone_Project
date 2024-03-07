@@ -6,7 +6,7 @@
       <class name="com.cps.qa.testCases.AccountPage_Test">
         <methods>
           <include name="setUp"/>
-          <include name="Deposit"/>
+          <include name="Verify_Deposit_With_InValideAmmount"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.cps.qa.testCases.AccountPage_Test -->

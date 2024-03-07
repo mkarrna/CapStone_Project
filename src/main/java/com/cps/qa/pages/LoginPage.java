@@ -52,29 +52,4 @@ public class LoginPage extends TestBase {
 		Manager_Login.click();
 	}
 	
-	
-	
-	
-	
-	
-	
-//	public AddToCart login(String un, String pwd){
-//	
-//		username.sendKeys(un);
-//		password.sendKeys(pwd);
-//		loginBtn.click();
-//		    
-//		    	
-//		return new AddToCart();
-//	}
-//	public HomePage login1(String un, String pwd){
-//		
-//		username.sendKeys(un);
-//		password.sendKeys(pwd);
-//		loginBtn.click();
-//		    
-//		    	
-//		return new HomePage();
-//	}
-//	
 }
