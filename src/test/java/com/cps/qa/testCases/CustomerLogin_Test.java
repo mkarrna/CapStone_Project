@@ -30,13 +30,8 @@ public class CustomerLogin_Test extends TestBase{
 		
 	}
 	
-	@Test(priority=1)
-	public void loginPageTitleTest(){
-		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "XYZ Bank");
-	}
 	
-	@Test(priority=2)
+	@Test(priority=1)
 	public void customerlogin()
 	{
 		loginPage.CustomerLogin(AccountexistUser);

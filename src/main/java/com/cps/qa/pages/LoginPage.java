@@ -15,7 +15,7 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="//button[normalize-space()='Customer Login']")
 	WebElement Customer_Login;
 	
-	@FindBy(linkText="Bank Manager Login")
+	@FindBy(xpath="//button[normalize-space()='Bank Manager Login']")
 	WebElement Manager_Login;
 	
 	
@@ -47,9 +47,41 @@ public class LoginPage extends TestBase {
 
 		
 	}
-	public void ManagerLogin()
+	
+	public CustomerTransactionPage CustomerLogin1(String username)
+	{
+		Customer_Login.click();
+		WebElement dropdownElement = driver.findElement(By.xpath(prop.getProperty("dropdown")));
+
+        // Create a Select object
+        Select dropdown = new Select(dropdownElement);
+
+        // Select an option by visible text
+        dropdown.selectByVisibleText(username);
+        String path=prop.getProperty("Login");
+        
+        driver.findElement(By.xpath(path)).click();
+        
+        return new CustomerTransactionPage();
+
+		
+	}
+	
+	
+	public AddCustomerPage ManagerLogin()
 	{
 		Manager_Login.click();
+		return new AddCustomerPage();
+	}
+	public OpenAccountPage ManagerLogin1()
+	{
+		Manager_Login.click();
+		return new OpenAccountPage();
+	}
+	public CustomersPage ManagerLogin2()
+	{
+		Manager_Login.click();
+		return new CustomersPage();
 	}
 	
 }

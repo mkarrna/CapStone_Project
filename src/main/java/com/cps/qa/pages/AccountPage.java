@@ -96,21 +96,13 @@ public class AccountPage extends TestBase{
 	
 	public AccountPage Withdraw(int amount) throws InterruptedException
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 1000);
 		
-		//wait.until(ExpectedConditions.visibilityOf(Withdraw_button));
 		Withdraw_button.click();
-		//driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		Thread.sleep(1000);
-		//wait.until(ExpectedConditions.visibilityOf(Amount_Filed));
+		Wait();
 		Amount_Filed.clear();
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		Thread.sleep(1000); 
-		// wait.until(ExpectedConditions.visibilityOf(Amount_Filed));
-		 Amount_Filed.sendKeys(String.valueOf(amount));
-		 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		Thread.sleep(1000); 
-		//wait.until(ExpectedConditions.visibilityOf(Submit));
+		Wait();
+		Amount_Filed.sendKeys(String.valueOf(amount));
+		Wait();
 		Submit.click();  
 
 		return new AccountPage();
@@ -208,6 +200,7 @@ public class AccountPage extends TestBase{
 		}
 	}
 	
+	public void Wait() throws InterruptedException {Thread.sleep(1000);}
 	public void InValidWithdraw(int Amount) throws InterruptedException
 	{
 		int count = acno();
