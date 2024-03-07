@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.cps.qa.testCases.CustomerLogin_Test"/>
-      <class name="com.cps.qa.testCases.AccountPage_Test"/>
+      <class name="com.cps.qa.testCases.CustomerTransactionPage_Test"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

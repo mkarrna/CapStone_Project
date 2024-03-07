@@ -28,7 +28,8 @@ public class CustomerTransactionPage extends TestBase{
 	@FindBy(xpath="//input[@id='end']")
 	WebElement EndDate;
 	
-	@FindBy(xpath="//tbody[1]/tr[1]/td[1]")
+	 
+	@FindBy(xpath="//*[@id=\"anchor0\"]/td[1]")
 	WebElement Validation;
 	
 	@FindBy(xpath = "//body//div[@class='ng-scope']//div[@class='ng-scope']//div[2]")
@@ -45,13 +46,13 @@ public class CustomerTransactionPage extends TestBase{
 		return driver.getTitle();
 	}
 	
-	public String Filter(String startDate, String endDate)
+	public void Filter(String startDate, String endDate)
 	{
 		Transaction_button.click();
 		StartDate.sendKeys(startDate);
 		EndDate.sendKeys(endDate);
 		pageclick.click();
-		 return Validation.getText();
+		 
 		
 	}
 	
