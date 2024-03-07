@@ -1,87 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T09:43:15Z" name="Suite" finished-at="2024-03-07T09:44:40Z" duration-ms="84787">
+  <suite started-at="2024-03-07T10:19:28Z" name="Suite" finished-at="2024-03-07T10:21:37Z" duration-ms="128370">
     <groups>
     </groups>
-    <test started-at="2024-03-07T09:43:15Z" name="Test" finished-at="2024-03-07T09:44:40Z" duration-ms="84787">
+    <test started-at="2024-03-07T10:19:28Z" name="Test" finished-at="2024-03-07T10:21:37Z" duration-ms="128370">
       <class name="com.cps.qa.testCases.CustomerLogin_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.CustomerLogin_Test@6221a451]" started-at="2024-03-07T15:13:15Z" name="setUp" finished-at="2024-03-07T15:13:18Z" duration-ms="3474" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.CustomerLogin_Test@4d154ccd]" started-at="2024-03-07T15:49:37Z" name="setUp" finished-at="2024-03-07T15:49:40Z" duration-ms="2637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="customerlogin()[pri:1, instance:com.cps.qa.testCases.CustomerLogin_Test@6221a451]" started-at="2024-03-07T15:13:18Z" name="customerlogin" finished-at="2024-03-07T15:13:21Z" duration-ms="2774" status="PASS">
+        <test-method signature="customerlogin()[pri:1, instance:com.cps.qa.testCases.CustomerLogin_Test@4d154ccd]" started-at="2024-03-07T15:49:40Z" name="customerlogin" finished-at="2024-03-07T15:49:43Z" duration-ms="2917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customerlogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.CustomerLogin_Test@6221a451]" started-at="2024-03-07T15:13:21Z" name="tearDown" finished-at="2024-03-07T15:13:21Z" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.CustomerLogin_Test@4d154ccd]" started-at="2024-03-07T15:49:43Z" name="tearDown" finished-at="2024-03-07T15:49:43Z" duration-ms="418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.cps.qa.testCases.CustomerLogin_Test -->
-      <class name="com.cps.qa.testCases.AccountPage_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:13:22Z" name="setUp" finished-at="2024-03-07T15:13:27Z" duration-ms="5021" status="PASS">
+      <class name="com.cps.qa.testCases.CustomerTransactionPage_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.CustomerTransactionPage_Test@65c7a252]" started-at="2024-03-07T15:49:28Z" name="setUp" finished-at="2024-03-07T15:49:34Z" duration-ms="5629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_Deposit_With_ValideAmmount()[pri:1, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:13:27Z" name="Verify_Deposit_With_ValideAmmount" finished-at="2024-03-07T15:13:31Z" duration-ms="4156" status="PASS">
+        <test-method signature="Verify_Deposit_With_ValideAmmount()[pri:1, instance:com.cps.qa.testCases.CustomerTransactionPage_Test@65c7a252]" started-at="2024-03-07T15:49:34Z" name="Verify_Deposit_With_ValideAmmount" finished-at="2024-03-07T15:49:37Z" duration-ms="2721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Deposit_With_ValideAmmount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:13:31Z" name="tearDown" finished-at="2024-03-07T15:13:31Z" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.CustomerTransactionPage_Test@65c7a252]" started-at="2024-03-07T15:49:37Z" name="tearDown" finished-at="2024-03-07T15:49:37Z" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:13:31Z" name="setUp" finished-at="2024-03-07T15:13:36Z" duration-ms="4992" status="PASS">
+      </class> <!-- com.cps.qa.testCases.CustomerTransactionPage_Test -->
+      <class name="com.cps.qa.testCases.CustomersPage_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.CustomersPage_Test@229c6181]" started-at="2024-03-07T15:49:43Z" name="setUp" finished-at="2024-03-07T15:49:47Z" duration-ms="3933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_Deposit_With_InValideAmmount()[pri:2, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:13:36Z" name="Verify_Deposit_With_InValideAmmount" finished-at="2024-03-07T15:13:40Z" duration-ms="3988" status="PASS">
+        <test-method signature="DeleteCustomerEntry()[pri:1, instance:com.cps.qa.testCases.CustomersPage_Test@229c6181]" started-at="2024-03-07T15:49:47Z" name="DeleteCustomerEntry" finished-at="2024-03-07T15:49:48Z" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteCustomerEntry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.CustomersPage_Test@229c6181]" started-at="2024-03-07T15:49:48Z" name="tearDown" finished-at="2024-03-07T15:49:49Z" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cps.qa.testCases.CustomersPage_Test -->
+      <class name="com.cps.qa.testCases.AddCustomerPage_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AddCustomerPage_Test@4686afc2]" started-at="2024-03-07T15:49:49Z" name="setUp" finished-at="2024-03-07T15:49:53Z" duration-ms="4033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddCustomer_NotExist()[pri:1, instance:com.cps.qa.testCases.AddCustomerPage_Test@4686afc2]" started-at="2024-03-07T15:49:53Z" name="AddCustomer_NotExist" finished-at="2024-03-07T15:49:55Z" duration-ms="2070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustomer_NotExist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AddCustomerPage_Test@4686afc2]" started-at="2024-03-07T15:49:55Z" name="tearDown" finished-at="2024-03-07T15:49:55Z" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AddCustomerPage_Test@4686afc2]" started-at="2024-03-07T15:50:22Z" name="setUp" finished-at="2024-03-07T15:50:26Z" duration-ms="3851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddCustomer_Exist()[pri:2, instance:com.cps.qa.testCases.AddCustomerPage_Test@4686afc2]" started-at="2024-03-07T15:50:26Z" name="AddCustomer_Exist" finished-at="2024-03-07T15:50:30Z" depends-on-methods="com.cps.qa.testCases.AddCustomerPage_Test.AddCustomer_NotExist" duration-ms="3899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustomer_Exist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AddCustomerPage_Test@4686afc2]" started-at="2024-03-07T15:50:30Z" name="tearDown" finished-at="2024-03-07T15:50:31Z" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cps.qa.testCases.AddCustomerPage_Test -->
+      <class name="com.cps.qa.testCases.AccountPage_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:14Z" name="setUp" finished-at="2024-03-07T15:50:18Z" duration-ms="4836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_Deposit_With_ValideAmmount()[pri:1, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:18Z" name="Verify_Deposit_With_ValideAmmount" finished-at="2024-03-07T15:50:22Z" duration-ms="3648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Deposit_With_ValideAmmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:22Z" name="tearDown" finished-at="2024-03-07T15:50:22Z" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:31Z" name="setUp" finished-at="2024-03-07T15:50:35Z" duration-ms="4380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_Deposit_With_InValideAmmount()[pri:2, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:35Z" name="Verify_Deposit_With_InValideAmmount" finished-at="2024-03-07T15:50:38Z" duration-ms="3458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Deposit_With_InValideAmmount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:13:40Z" name="tearDown" finished-at="2024-03-07T15:13:40Z" duration-ms="295" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:38Z" name="tearDown" finished-at="2024-03-07T15:50:39Z" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:13:40Z" name="setUp" finished-at="2024-03-07T15:13:45Z" duration-ms="4517" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:39Z" name="setUp" finished-at="2024-03-07T15:50:44Z" duration-ms="5186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_Withdraw_With_ValideAmmount()[pri:3, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:13:45Z" name="Verify_Withdraw_With_ValideAmmount" finished-at="2024-03-07T15:14:00Z" duration-ms="15345" status="PASS">
+        <test-method signature="Verify_Withdraw_With_ValideAmmount()[pri:3, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:44Z" name="Verify_Withdraw_With_ValideAmmount" finished-at="2024-03-07T15:50:58Z" duration-ms="14195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Withdraw_With_ValideAmmount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:14:00Z" name="tearDown" finished-at="2024-03-07T15:14:00Z" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:58Z" name="tearDown" finished-at="2024-03-07T15:50:59Z" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:14:00Z" name="setUp" finished-at="2024-03-07T15:14:06Z" duration-ms="5095" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:50:59Z" name="setUp" finished-at="2024-03-07T15:51:04Z" duration-ms="4864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_Withdraw_With_InValideAmmount()[pri:4, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:14:06Z" name="Verify_Withdraw_With_InValideAmmount" finished-at="2024-03-07T15:14:18Z" duration-ms="12779" status="PASS">
+        <test-method signature="Verify_Withdraw_With_InValideAmmount()[pri:4, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:51:04Z" name="Verify_Withdraw_With_InValideAmmount" finished-at="2024-03-07T15:51:16Z" duration-ms="12290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Withdraw_With_InValideAmmount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:14:18Z" name="tearDown" finished-at="2024-03-07T15:14:19Z" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:51:16Z" name="tearDown" finished-at="2024-03-07T15:51:16Z" duration-ms="409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:14:19Z" name="setUp" finished-at="2024-03-07T15:14:24Z" duration-ms="5032" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:51:16Z" name="setUp" finished-at="2024-03-07T15:51:21Z" duration-ms="5169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_Withdraw_With_InSufficient()[pri:5, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:14:24Z" name="Verify_Withdraw_With_InSufficient" finished-at="2024-03-07T15:14:39Z" duration-ms="15309" status="PASS">
+        <test-method signature="Verify_Withdraw_With_InSufficient()[pri:5, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:51:21Z" name="Verify_Withdraw_With_InSufficient" finished-at="2024-03-07T15:51:36Z" duration-ms="15001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Withdraw_With_InSufficient -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@52719fb6]" started-at="2024-03-07T15:14:39Z" name="tearDown" finished-at="2024-03-07T15:14:40Z" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.AccountPage_Test@38cee291]" started-at="2024-03-07T15:51:36Z" name="tearDown" finished-at="2024-03-07T15:51:37Z" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.cps.qa.testCases.AccountPage_Test -->
+      <class name="com.cps.qa.testCases.OpenAccountPage_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cps.qa.testCases.OpenAccountPage_Test@791f145a]" started-at="2024-03-07T15:49:55Z" name="setUp" finished-at="2024-03-07T15:49:59Z" duration-ms="4166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="OpenAccount()[pri:1, instance:com.cps.qa.testCases.OpenAccountPage_Test@791f145a]" started-at="2024-03-07T15:49:59Z" name="OpenAccount" finished-at="2024-03-07T15:50:12Z" duration-ms="12930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cps.qa.testCases.OpenAccountPage_Test@791f145a]" started-at="2024-03-07T15:50:12Z" name="tearDown" finished-at="2024-03-07T15:50:14Z" duration-ms="1351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cps.qa.testCases.OpenAccountPage_Test -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

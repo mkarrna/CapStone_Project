@@ -32,8 +32,6 @@ public class AccountPage_Test extends TestBase{
 		initialization();
 		loginPage = new LoginPage();
 		accountPage = loginPage.CustomerLogin(AccountexistUser);
-		
-		
 	}
 	
 	
@@ -69,14 +67,11 @@ public class AccountPage_Test extends TestBase{
 	}
 	
 	
-	
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
 	}
 	
-	
-	
-	
+
 
 }
