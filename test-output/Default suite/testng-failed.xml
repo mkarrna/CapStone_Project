@@ -5,7 +5,13 @@
     <classes>
       <class name="com.cps.qa.testCases.AccountPage_Test">
         <methods>
+          <include name="Verify_Deposit_With_ValideAmmount"/>
           <include name="setUp"/>
+          <include name="Verify_Withdraw_With_InValideAmmount"/>
+          <include name="Verify_Withdraw_With_ValideAmmount"/>
+          <include name="verifyBalance"/>
+          <include name="Verify_Withdraw_With_InSufficient"/>
+          <include name="loginPageTitleTest"/>
           <include name="Verify_Deposit_With_InValideAmmount"/>
           <include name="tearDown"/>
         </methods>

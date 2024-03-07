@@ -1,5 +1,7 @@
 package com.cps.qa.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,7 +9,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.cps.qa.base.TestBase;
@@ -22,7 +26,7 @@ public class AccountPage extends TestBase{
 	WebElement Deposit_button;
 	
 	@FindBy(xpath="//button[@type='submit']")
-	WebElement Deposit_Submit;
+	WebElement Submit;
 	
 	@FindBy(xpath="//button[normalize-space()='Withdrawl']")
 	WebElement Withdraw_button;
@@ -30,7 +34,7 @@ public class AccountPage extends TestBase{
 	@FindBy(xpath="//div[2]/strong[1]")
 	WebElement Account_number;
 	
-	@FindBy(xpath="//div[2]/strong[2]")
+	@FindBy(xpath="/html/body/div/div/div[2]/div/div[2]/strong[2]") ////div[2]/strong[2]
 	WebElement Balance;
 
 	@FindBy(xpath="//div[2]/strong[3]")
@@ -40,16 +44,10 @@ public class AccountPage extends TestBase{
 	WebElement AccountNumberList;
 	
 	@FindBy(xpath="//input[@placeholder='amount']")
-	WebElement Deposit_Amount;
+	WebElement Amount_Filed;
 	
 	@FindBy(xpath="//span[@class='error ng-binding']")
-	WebElement deposit_Message;
-	
-	
-	
-	
-	
-	
+	WebElement Message;
 	
 	
 	
@@ -68,7 +66,8 @@ public class AccountPage extends TestBase{
 		return Customer_Name.getText();
 	}
 	
-	public String GetBalance(){
+	public String GetBalance()
+	{
 		return Balance.getText();
 	}
 	
@@ -89,28 +88,67 @@ public class AccountPage extends TestBase{
 	public AccountPage Deposit(int amount)
 	{
 		Deposit_button.click();
-		Deposit_Amount.clear();
-		Deposit_Amount.sendKeys(String.valueOf(amount));
-		Deposit_Submit.click();  	
+		 Amount_Filed.clear();
+		 Amount_Filed.sendKeys(String.valueOf(amount));
+		Submit.click();  	
+		return new AccountPage();
+	}
+	
+	public AccountPage Withdraw(int amount) throws InterruptedException
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 1000);
+		
+		//wait.until(ExpectedConditions.visibilityOf(Withdraw_button));
+		Withdraw_button.click();
+		//driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		Thread.sleep(1000);
+		//wait.until(ExpectedConditions.visibilityOf(Amount_Filed));
+		Amount_Filed.clear();
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		Thread.sleep(1000); 
+		// wait.until(ExpectedConditions.visibilityOf(Amount_Filed));
+		 Amount_Filed.sendKeys(String.valueOf(amount));
+		 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		Thread.sleep(1000); 
+		//wait.until(ExpectedConditions.visibilityOf(Submit));
+		Submit.click();  
+
 		return new AccountPage();
 	}
 	
 	
 	public String message()
 	{
-		return deposit_Message.getText();
+		return Message.getText();
 	}
 	
-	public int CurrentBalance(int Amount_To_Deposit,int oldBalance)
+	//for Deposit
+	public int Deposit_CurrentBalance(int Amount_To_Deposit,int oldBalance)
 	{
-		int currentBalance=0;
-		if(Amount_To_Deposit<0)
+		int currentBalance = 0;
+		if(Amount_To_Deposit < 0)
 		{
 			currentBalance = oldBalance;
 		}
 		else
 		{
 			currentBalance = oldBalance + Amount_To_Deposit;
+		}
+		return currentBalance;
+		
+	}
+	
+	//for withdraw
+	public int Withdraw_CurrentBalance(int Amount_To_Withdraw,int oldBalance)
+	{
+		int currentBalance = 0;
+		if(Amount_To_Withdraw < 0 || Amount_To_Withdraw > oldBalance)
+		{
+			currentBalance = oldBalance;
+		}
+		else
+		{
+			currentBalance = oldBalance - Amount_To_Withdraw;
 		}
 		return currentBalance;
 		
@@ -125,7 +163,7 @@ public class AccountPage extends TestBase{
 			 int oldBal= Integer.valueOf(GetBalance());
 			 Deposit(Amount);
 			 int newBal = Integer.valueOf(GetBalance());
-			 int currentBal = CurrentBalance(Amount,oldBal) ;
+			 int currentBal = Deposit_CurrentBalance(Amount,oldBal) ;
 			 Assert.assertEquals(currentBal, newBal);
 			 String msg = message();
 			 Assert.assertEquals(msg , message );
@@ -141,7 +179,7 @@ public class AccountPage extends TestBase{
 			 int oldBal= Integer.valueOf(GetBalance());
 			 Deposit(Amount);
 			 int newBal = Integer.valueOf(GetBalance());
-			 int currentBal = CurrentBalance(Amount,oldBal) ;
+			 int currentBal = Deposit_CurrentBalance(Amount,oldBal) ;
 			 Assert.assertEquals(currentBal, newBal);
 			 
 			 //invalid case doesn't raise error msg
@@ -151,17 +189,40 @@ public class AccountPage extends TestBase{
 		}
 	}
 	
+	public void ValidWithdraw(String message,int Amount) throws InterruptedException
+	{
+		int count = acno();
+		for(int i=0;i<count;i++)
+		{
+			 SelectAccount(i);
+			 Deposit(20000);
+			 int oldBal= Integer.valueOf(GetBalance());
+			 Withdraw(Amount);
+			 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			 int newBal = Integer.valueOf(GetBalance());
+			 int currentBal = Withdraw_CurrentBalance(Amount,oldBal) ;
+			 Assert.assertEquals(currentBal, newBal);
+			 String msg = message();
+			 Assert.assertEquals(msg , message );
+			 
+		}
+	}
 	
-//	public HomePage login1(String un, String pwd){
-//		
-//		username.sendKeys(un);
-//		password.sendKeys(pwd);
-//		loginBtn.click();
-//		    
-//		    	
-//		return new HomePage();
-//	}
-//	
-
+	public void InValidWithdraw(int Amount) throws InterruptedException
+	{
+		int count = acno();
+		for(int i=0;i<count;i++)
+		{
+			 SelectAccount(i);
+			 int oldBal= Integer.valueOf(GetBalance());
+			 Withdraw(Amount);
+			 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			 int newBal = Integer.valueOf(GetBalance());
+			 int currentBal = Withdraw_CurrentBalance(Amount,oldBal) ;
+			 Assert.assertEquals(newBal,currentBal);
+			 
+			 
+		}
+	}
 	
 }

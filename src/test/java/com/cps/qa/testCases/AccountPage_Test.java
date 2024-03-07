@@ -17,11 +17,13 @@ public class AccountPage_Test extends TestBase{
 	String AccountNot_existUser = prop.getProperty("AccontNot_ExistUser");
 	int ValidAmount = Integer.valueOf(prop.getProperty("ValidAmount")) ;
 	int InValidAmount = Integer.valueOf(prop.getProperty("InValidAmount")) ;
+	String Successfull= prop.getProperty("Successfull");
+	String inSufficient = prop.getProperty("inSufficient");
+	int InSufficient_Amount = Integer.valueOf(prop.getProperty("InSufficient_Amount")) ;
 	
 	
-	
-	
-	public AccountPage_Test(){
+	public AccountPage_Test()
+	{
 		super();
 	}
 	
@@ -62,21 +64,24 @@ public class AccountPage_Test extends TestBase{
 		accountPage.InValidDeposit(InValidAmount);
 	}
 	
-//	@Test(priority=4)
-//	public void Deposit()
-//	{
-//		int count = accountPage.acno();
-//		for(int i=0;i<count;i++)
-//		{
-//			 accountPage.SelectAccount(i);
-//			 int oldBal= Integer.valueOf(accountPage.GetBalance());
-//			 accountPage.Deposit(Amount);
-//	
-//			 int newBal = Integer.valueOf(accountPage.GetBalance());
-//			 int currentBal = oldBal + Amount ;
-//			 Assert.assertEquals(currentBal, newBal);
-//		}
-//	}
+	@Test(priority=4)
+	public void Verify_Withdraw_With_ValideAmmount() throws InterruptedException
+	{
+		accountPage.ValidWithdraw(Successfull,ValidAmount);
+	}
+	
+	@Test(priority=5)
+	public void Verify_Withdraw_With_InValideAmmount() throws InterruptedException
+	{
+		accountPage.InValidWithdraw(InValidAmount);
+	}
+	
+	@Test(priority=6)
+	public void Verify_Withdraw_With_InSufficient() throws InterruptedException
+	{
+		accountPage.ValidWithdraw(inSufficient,InSufficient_Amount);
+	}
+	
 	
 	
 	@AfterMethod
