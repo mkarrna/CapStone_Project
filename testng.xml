@@ -6,7 +6,7 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-     <class name="com.cps.qa.testCases.CustomerTransactionPage_Test"/>
+      <class name="com.cps.qa.testCases.CustomerTransactionPage_Test"/>
       <class name="com.cps.qa.testCases.CustomerLogin_Test"/>
       <class name="com.cps.qa.testCases.CustomersPage_Test"/>
       <class name="com.cps.qa.testCases.AddCustomerPage_Test"/>

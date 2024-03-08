@@ -1,16 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 184.544 s <<< FAILURE! - in TestSuite
-Verify_Deposit_With_ValideAmmount(com.cps.qa.testCases.CustomerTransactionPage_Test)  Time elapsed: 21.602 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //tbody[1]/tr[1]/td[1]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'KARNA', ip: '192.168.233.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5272, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 112a1039-e72d-4332-94d8-14d0ef60b8e5
-*** Element info: {Using=xpath, value=//tbody[1]/tr[1]/td[1]}
-	at com.cps.qa.testCases.CustomerTransactionPage_Test.Verify_Deposit_With_ValideAmmount(CustomerTransactionPage_Test.java:45)
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 132.206 s <<< FAILURE! - in TestSuite
+Verify_Deposit_With_InValideAmmount(com.cps.qa.testCases.AccountPage_Test)  Time elapsed: 2.526 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.cps.qa.testCases.AccountPage_Test.Verify_Deposit_With_InValideAmmount(AccountPage_Test.java:49)
 

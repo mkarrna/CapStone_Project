@@ -39,6 +39,8 @@ public class OpenAccountPage_Test extends TestBase{
 	public void OpenAccount() throws InterruptedException{
 		openAccountPage.OpenAccount_button.click();
 		openAccountPage.AddCustomer(OpenAccount_username);
+		
+		
 	}
 	
 	

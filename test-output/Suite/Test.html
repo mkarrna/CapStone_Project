@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 07 17:16:52 IST 2024</td>
+<td>Started on:</td><td>Fri Mar 08 11:22:47 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8102 ms)</td>
+<tr><td>Total time:</td><td>151 seconds (151937 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,109 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cps.qa.testCases.AccountPage_Test.Verify_Deposit_With_InValideAmmount()'><b>Verify_Deposit_With_InValideAmmount</b><br>Test class: com.cps.qa.testCases.AccountPage_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;error ng-binding&apos;]&quot;}
+  (Session info: chrome=122.0.6261.96)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;KARNA&apos;, ip: &apos;192.168.233.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.96, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97fd88fd8262a7a81ed25e0bd9ed5d09
+*** Element info: {Using=xpath, value=//span[@class=&apos;error ng-binding&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.cps.qa.pages.AccountPage.message(AccountPage.java:114)
+	at com.cps.qa.pages.AccountPage.InValidDeposit(AccountPage.java:178)
+	at com.cps.qa.testCases.AccountPage_Test.Verify_Deposit_With_InValideAmmount(AccountPage_Test.java:49)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace276561074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace276561074'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;error ng-binding&apos;]&quot;}
+  (Session info: chrome=122.0.6261.96)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;KARNA&apos;, ip: &apos;192.168.233.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.96, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97fd88fd8262a7a81ed25e0bd9ed5d09
+*** Element info: {Using=xpath, value=//span[@class=&apos;error ng-binding&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.cps.qa.pages.AccountPage.message(AccountPage.java:114)
+	at com.cps.qa.pages.AccountPage.InValidDeposit(AccountPage.java:178)
+	at com.cps.qa.testCases.AccountPage_Test.Verify_Deposit_With_InValideAmmount(AccountPage_Test.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>com.cps.qa.testCases.AccountPage_Test@1040be71</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +178,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.cps.qa.testCases.AddCustomerPage_Test.AddCustomer_Exist()'><b>AddCustomer_Exist</b><br>Test class: com.cps.qa.testCases.AddCustomerPage_Test</td>
+<td></td>
+<td>3</td>
+<td>com.cps.qa.testCases.AddCustomerPage_Test@35841320</td></tr>
+<tr>
+<td title='com.cps.qa.testCases.AddCustomerPage_Test.AddCustomer_NotExist()'><b>AddCustomer_NotExist</b><br>Test class: com.cps.qa.testCases.AddCustomerPage_Test</td>
+<td></td>
+<td>1</td>
+<td>com.cps.qa.testCases.AddCustomerPage_Test@35841320</td></tr>
+<tr>
+<td title='com.cps.qa.testCases.CustomersPage_Test.DeleteCustomerEntry()'><b>DeleteCustomerEntry</b><br>Test class: com.cps.qa.testCases.CustomersPage_Test</td>
+<td></td>
+<td>1</td>
+<td>com.cps.qa.testCases.CustomersPage_Test@7ae0a9ec</td></tr>
+<tr>
+<td title='com.cps.qa.testCases.OpenAccountPage_Test.OpenAccount()'><b>OpenAccount</b><br>Test class: com.cps.qa.testCases.OpenAccountPage_Test</td>
+<td></td>
+<td>12</td>
+<td>com.cps.qa.testCases.OpenAccountPage_Test@6f10d5b6</td></tr>
+<tr>
 <td title='com.cps.qa.testCases.CustomerTransactionPage_Test.Verify_Deposit_With_ValideAmmount()'><b>Verify_Deposit_With_ValideAmmount</b><br>Test class: com.cps.qa.testCases.CustomerTransactionPage_Test</td>
 <td></td>
 <td>2</td>
-<td>com.cps.qa.testCases.CustomerTransactionPage_Test@183ec003</td></tr>
+<td>com.cps.qa.testCases.CustomerTransactionPage_Test@302c971f</td></tr>
+<tr>
+<td title='com.cps.qa.testCases.AccountPage_Test.Verify_Deposit_With_ValideAmmount()'><b>Verify_Deposit_With_ValideAmmount</b><br>Test class: com.cps.qa.testCases.AccountPage_Test</td>
+<td></td>
+<td>3</td>
+<td>com.cps.qa.testCases.AccountPage_Test@1040be71</td></tr>
+<tr>
+<td title='com.cps.qa.testCases.AccountPage_Test.Verify_Withdraw_With_InSufficient()'><b>Verify_Withdraw_With_InSufficient</b><br>Test class: com.cps.qa.testCases.AccountPage_Test</td>
+<td></td>
+<td>16</td>
+<td>com.cps.qa.testCases.AccountPage_Test@1040be71</td></tr>
+<tr>
+<td title='com.cps.qa.testCases.AccountPage_Test.Verify_Withdraw_With_InValideAmmount()'><b>Verify_Withdraw_With_InValideAmmount</b><br>Test class: com.cps.qa.testCases.AccountPage_Test</td>
+<td></td>
+<td>12</td>
+<td>com.cps.qa.testCases.AccountPage_Test@1040be71</td></tr>
+<tr>
+<td title='com.cps.qa.testCases.AccountPage_Test.Verify_Withdraw_With_ValideAmmount()'><b>Verify_Withdraw_With_ValideAmmount</b><br>Test class: com.cps.qa.testCases.AccountPage_Test</td>
+<td></td>
+<td>15</td>
+<td>com.cps.qa.testCases.AccountPage_Test@1040be71</td></tr>
+<tr>
+<td title='com.cps.qa.testCases.CustomerLogin_Test.customerlogin()'><b>customerlogin</b><br>Test class: com.cps.qa.testCases.CustomerLogin_Test</td>
+<td></td>
+<td>2</td>
+<td>com.cps.qa.testCases.CustomerLogin_Test@1972e513</td></tr>
 </table><p>
 </body>
 </html>

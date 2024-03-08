@@ -16,8 +16,6 @@ public class CustomerLogin_Test extends TestBase{
 	String AccountexistUser = prop.getProperty("AccontExistUser");
 	String AccountNot_existUser = prop.getProperty("AccontNot_ExistUser");
 	
-	
-	
 	public CustomerLogin_Test(){
 		super();
 	}
@@ -49,17 +47,10 @@ public class CustomerLogin_Test extends TestBase{
 //		
 //	}
 	
-	
-	
-	
-	
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
 	}
-	
-	
-	
-	
+		
 
 }

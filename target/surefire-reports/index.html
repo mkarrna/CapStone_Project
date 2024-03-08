@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.cps.qa.testCases.CustomerTransactionPage_Test" class="method navigator-link" hash-for-method="Verify_Deposit_With_ValideAmmount">Verify_Deposit_With_ValideAmmount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.cps.qa.testCases.AccountPage_Test" class="method navigator-link" hash-for-method="Verify_Deposit_With_InValideAmmount">Verify_Deposit_With_InValideAmmount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -136,12 +136,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.cps.qa.testCases.AccountPage_Test" class="method navigator-link" hash-for-method="Verify_Deposit_With_InValideAmmount">Verify_Deposit_With_InValideAmmount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.cps.qa.testCases.AccountPage_Test" class="method navigator-link" hash-for-method="Verify_Deposit_With_ValideAmmount">Verify_Deposit_With_ValideAmmount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.cps.qa.testCases.AccountPage_Test" class="method navigator-link" hash-for-method="Verify_Deposit_With_ValideAmmount">Verify_Deposit_With_ValideAmmount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.cps.qa.testCases.CustomerTransactionPage_Test" class="method navigator-link" hash-for-method="Verify_Deposit_With_ValideAmmount">Verify_Deposit_With_ValideAmmount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -179,46 +179,38 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.cps.qa.testCases.CustomerTransactionPage_Test</span>
+              <span class="class-name">com.cps.qa.testCases.AccountPage_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_Deposit_With_ValideAmmount">
-                  </a> <!-- Verify_Deposit_With_ValideAmmount -->
-                  <span class="method-name">Verify_Deposit_With_ValideAmmount</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //tbody[1]/tr[1]/td[1]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;KARNA&apos;, ip: &apos;192.168.233.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5272, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 112a1039-e72d-4332-94d8-14d0ef60b8e5
-*** Element info: {Using=xpath, value=//tbody[1]/tr[1]/td[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at com.cps.qa.pages.CustomerTransactionPage.Filter(CustomerTransactionPage.java:54)
-	at com.cps.qa.testCases.CustomerTransactionPage_Test.Verify_Deposit_With_ValideAmmount(CustomerTransactionPage_Test.java:45)
-... Removed 38 stack frames
+                  <a name="Verify_Deposit_With_InValideAmmount">
+                  </a> <!-- Verify_Deposit_With_InValideAmmount -->
+                  <span class="method-name">Verify_Deposit_With_InValideAmmount</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.cps.qa.pages.AccountPage.InValidDeposit(AccountPage.java:179)
+	at com.cps.qa.testCases.AccountPage_Test.Verify_Deposit_With_InValideAmmount(AccountPage_Test.java:49)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cps.qa.testCases.CustomerLogin_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerlogin">
+                  </a> <!-- customerlogin -->
+                  <span class="method-name">customerlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -237,53 +229,9 @@ Session ID: 112a1039-e72d-4332-94d8-14d0ef60b8e5
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.cps.qa.testCases.AddCustomerPage_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AddCustomer_Exist">
-                  </a> <!-- AddCustomer_Exist -->
-                  <span class="method-name">AddCustomer_Exist</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="AddCustomer_NotExist">
-                  </a> <!-- AddCustomer_NotExist -->
-                  <span class="method-name">AddCustomer_NotExist</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.cps.qa.testCases.OpenAccountPage_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="OpenAccount">
-                  </a> <!-- OpenAccount -->
-                  <span class="method-name">OpenAccount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.cps.qa.testCases.AccountPage_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_Deposit_With_InValideAmmount">
-                  </a> <!-- Verify_Deposit_With_InValideAmmount -->
-                  <span class="method-name">Verify_Deposit_With_InValideAmmount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="Verify_Deposit_With_ValideAmmount">
@@ -317,14 +265,51 @@ Session ID: 112a1039-e72d-4332-94d8-14d0ef60b8e5
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.cps.qa.testCases.CustomerLogin_Test</span>
+              <span class="class-name">com.cps.qa.testCases.OpenAccountPage_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="customerlogin">
-                  </a> <!-- customerlogin -->
-                  <span class="method-name">customerlogin</span>
+                  <a name="OpenAccount">
+                  </a> <!-- OpenAccount -->
+                  <span class="method-name">OpenAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cps.qa.testCases.AddCustomerPage_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCustomer_Exist">
+                  </a> <!-- AddCustomer_Exist -->
+                  <span class="method-name">AddCustomer_Exist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCustomer_NotExist">
+                  </a> <!-- AddCustomer_NotExist -->
+                  <span class="method-name">AddCustomer_NotExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cps.qa.testCases.CustomerTransactionPage_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Deposit_With_ValideAmmount">
+                  </a> <!-- Verify_Deposit_With_ValideAmmount -->
+                  <span class="method-name">Verify_Deposit_With_ValideAmmount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -392,49 +377,49 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verify_Deposit_With_ValideAmmount')
-data.setCell(0, 2, 'com.cps.qa.testCases.CustomerTransactionPage_Test')
-data.setCell(0, 3, 21590);
+data.setCell(0, 1, 'Verify_Withdraw_With_InSufficient')
+data.setCell(0, 2, 'com.cps.qa.testCases.AccountPage_Test')
+data.setCell(0, 3, 15873);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Verify_Withdraw_With_InSufficient')
+data.setCell(1, 1, 'Verify_Withdraw_With_ValideAmmount')
 data.setCell(1, 2, 'com.cps.qa.testCases.AccountPage_Test')
-data.setCell(1, 3, 13526);
+data.setCell(1, 3, 15649);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Verify_Withdraw_With_ValideAmmount')
+data.setCell(2, 1, 'Verify_Withdraw_With_InValideAmmount')
 data.setCell(2, 2, 'com.cps.qa.testCases.AccountPage_Test')
-data.setCell(2, 3, 13495);
+data.setCell(2, 3, 12950);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'OpenAccount')
 data.setCell(3, 2, 'com.cps.qa.testCases.OpenAccountPage_Test')
-data.setCell(3, 3, 12459);
+data.setCell(3, 3, 12941);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Verify_Withdraw_With_InValideAmmount')
+data.setCell(4, 1, 'Verify_Deposit_With_ValideAmmount')
 data.setCell(4, 2, 'com.cps.qa.testCases.AccountPage_Test')
-data.setCell(4, 3, 11719);
+data.setCell(4, 3, 4306);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Verify_Deposit_With_ValideAmmount')
-data.setCell(5, 2, 'com.cps.qa.testCases.AccountPage_Test')
-data.setCell(5, 3, 2855);
+data.setCell(5, 1, 'AddCustomer_Exist')
+data.setCell(5, 2, 'com.cps.qa.testCases.AddCustomerPage_Test')
+data.setCell(5, 3, 4056);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Verify_Deposit_With_InValideAmmount')
-data.setCell(6, 2, 'com.cps.qa.testCases.AccountPage_Test')
-data.setCell(6, 3, 2814);
+data.setCell(6, 1, 'Verify_Deposit_With_ValideAmmount')
+data.setCell(6, 2, 'com.cps.qa.testCases.CustomerTransactionPage_Test')
+data.setCell(6, 3, 2898);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'AddCustomer_Exist')
-data.setCell(7, 2, 'com.cps.qa.testCases.AddCustomerPage_Test')
-data.setCell(7, 3, 2656);
+data.setCell(7, 1, 'customerlogin')
+data.setCell(7, 2, 'com.cps.qa.testCases.CustomerLogin_Test')
+data.setCell(7, 3, 2521);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'customerlogin')
-data.setCell(8, 2, 'com.cps.qa.testCases.CustomerLogin_Test')
-data.setCell(8, 3, 1924);
+data.setCell(8, 1, 'Verify_Deposit_With_InValideAmmount')
+data.setCell(8, 2, 'com.cps.qa.testCases.AccountPage_Test')
+data.setCell(8, 3, 2516);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'AddCustomer_NotExist')
 data.setCell(9, 2, 'com.cps.qa.testCases.AddCustomerPage_Test')
-data.setCell(9, 3, 1029);
+data.setCell(9, 3, 2198);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'DeleteCustomerEntry')
 data.setCell(10, 2, 'com.cps.qa.testCases.CustomersPage_Test')
-data.setCell(10, 3, 984);
+data.setCell(10, 3, 1260);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -471,155 +456,155 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Verify_Deposit_With_ValideAmmount</span>
-                <span class="method-start">8570 ms</span>
+                <span class="method-start">5832 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30171 ms</span>
+                <span class="method-start">8730 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cps.qa.testCases.CustomerLogin_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">31286 ms</span>
+                <span class="method-start">8959 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">customerlogin</span>
-                <span class="method-start">36578 ms</span>
+                <span class="method-start">12201 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38502 ms</span>
+                <span class="method-start">14722 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cps.qa.testCases.CustomersPage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">39655 ms</span>
+                <span class="method-start">14936 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DeleteCustomerEntry</span>
-                <span class="method-start">45469 ms</span>
+                <span class="method-start">18761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46453 ms</span>
+                <span class="method-start">20021 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cps.qa.testCases.AddCustomerPage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">47809 ms</span>
+                <span class="method-start">20225 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AddCustomer_NotExist</span>
-                <span class="method-start">54637 ms</span>
+                <span class="method-start">24313 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">55666 ms</span>
+                <span class="method-start">26511 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cps.qa.testCases.OpenAccountPage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">56787 ms</span>
+                <span class="method-start">26824 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">OpenAccount</span>
-                <span class="method-start">63893 ms</span>
+                <span class="method-start">30799 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">76353 ms</span>
+                <span class="method-start">43740 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cps.qa.testCases.AccountPage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">77516 ms</span>
+                <span class="method-start">44057 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_Deposit_With_ValideAmmount</span>
-                <span class="method-start">86798 ms</span>
+                <span class="method-start">48809 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">89653 ms</span>
+                <span class="method-start">53115 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cps.qa.testCases.AddCustomerPage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">90911 ms</span>
+                <span class="method-start">53359 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AddCustomer_Exist</span>
-                <span class="method-start">98229 ms</span>
+                <span class="method-start">57293 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">100886 ms</span>
+                <span class="method-start">61349 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cps.qa.testCases.AccountPage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">102415 ms</span>
+                <span class="method-start">61587 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verify_Deposit_With_InValideAmmount</span>
-                <span class="method-start">110572 ms</span>
+                <span class="method-start">66321 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">113386 ms</span>
+                <span class="method-start">68848 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">114886 ms</span>
+                <span class="method-start">69075 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_Withdraw_With_ValideAmmount</span>
-                <span class="method-start">123636 ms</span>
+                <span class="method-start">74084 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">137131 ms</span>
+                <span class="method-start">89734 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">138444 ms</span>
+                <span class="method-start">89987 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_Withdraw_With_InValideAmmount</span>
-                <span class="method-start">145905 ms</span>
+                <span class="method-start">95513 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">157624 ms</span>
+                <span class="method-start">108464 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">159015 ms</span>
+                <span class="method-start">108729 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_Withdraw_With_InSufficient</span>
-                <span class="method-start">167138 ms</span>
+                <span class="method-start">113311 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">180664 ms</span>
+                <span class="method-start">129184 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

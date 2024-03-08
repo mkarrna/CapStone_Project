@@ -6,13 +6,13 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.cps.qa.testCases.CustomerTransactionPage_Test">
+      <class name="com.cps.qa.testCases.AccountPage_Test">
         <methods>
           <include name="setUp"/>
-          <include name="Verify_Deposit_With_ValideAmmount"/>
+          <include name="Verify_Deposit_With_InValideAmmount"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.cps.qa.testCases.CustomerTransactionPage_Test -->
+      </class> <!-- com.cps.qa.testCases.AccountPage_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
